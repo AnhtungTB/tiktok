@@ -20,12 +20,11 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css'; // optional
 import HeadlessTippy from '@tippyjs/react/headless';
 
-import Button from '~/component/Button';
-import { Wrapper as PopperWrapper } from '~/component/Popper';
+import Button from '~/components/Button';
+import { Wrapper as PopperWrapper } from '~/components/Popper';
 import styles from './Header.module.scss';
 import images from '~/assets/images';
-import AccountItem from '~/component/AccountItem';
-import Menu from '~/component/Popper/Menu';
+import Menu from '~/components/Popper/Menu';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 
 const cx = classNames.bind(styles);
@@ -113,7 +112,6 @@ function Header() {
                         <div className={cx('search-result')} tabIndex="-1">
                             <PopperWrapper>
                                 <h4 className={cx('search-title')}>Accounts</h4>
-                                <AccountItem></AccountItem>
                             </PopperWrapper>
                         </div>
                     )}
